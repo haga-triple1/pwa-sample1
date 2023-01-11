@@ -13,5 +13,6 @@ export default defineConfig({
 				sample2: resolve(__dirname, "pages",'manifest-sw', 'index.html'),
 			},
 		},
+		assetsInlineLimit: 0
 	},
 })
