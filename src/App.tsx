@@ -1,9 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import manifest from "./assets/manifest.webmanifest";
 
 function App() {
   const [count, setCount] = useState(0)
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "manifest";
+    link.href = manifest;
+    document.head.appendChild(link);
+    return () => {
+      document.head.removeChild(link);
+    }
+  },[])
 
   return (
     <div className="App">
