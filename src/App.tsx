@@ -4,7 +4,19 @@ import './App.css'
 import manifest from "./assets/manifest.webmanifest";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [installable,setInstallable] = useState<boolean>(false);
+
+  useEffect(() => {
+    const listener : EventListenerOrEventListenerObject = (event) => {
+      event.preventDefault();
+      setInstallable(true);
+    };
+    window.addEventListener("beforeinstallprompt",listener)
+    return () => {
+      window.removeEventListener("beforeinstallprompt",listener)
+    }
+  },[setInstallable])
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "manifest";
@@ -26,6 +38,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      {installable && <p>このアプリはインストール可能です。</p>}
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
