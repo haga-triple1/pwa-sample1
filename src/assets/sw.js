@@ -1,4 +1,3 @@
-// noop
-setInterval(() => {
+self.addEventListener('fetch', function(e) {
     console.log("SW is active.")
-},1000)
+})
