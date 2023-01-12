@@ -8,7 +8,9 @@ const App = () => {
   useWebAppManifest(manifest)
   useEffect(() => {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register(sw);
+      navigator.serviceWorker.register(sw,{
+        scope: "/pwa-sample1/pages/manifest-sw"
+      });
     }
   },[])
   return <div>
