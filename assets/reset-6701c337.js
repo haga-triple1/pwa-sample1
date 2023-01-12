@@ -1,1 +1,0 @@
-import{c as t,j as e,R as o,r as i}from"./client-c225e30d.js";import{s}from"./sw-7f7fa43f.js";const c=()=>(i.useEffect(()=>{"serviceWorker"in navigator&&navigator.serviceWorker.getRegistration(s).then(r=>{r==null||r.unregister()})},[]),e("div",{children:"Reset Service Worker"}));t.createRoot(document.getElementById("root")).render(e(o.StrictMode,{children:e(c,{})}));
