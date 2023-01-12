@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
-import { useWebAppManifest } from '../../src/useWebAppManifest'
-import manifest from "../../src/assets/manifest-sw.webmanifest";
+import { useWebAppManifest } from './useWebAppManifest'
+import manifest from "./manifest.webmanifest";
 import sw from "./sw.js?url"
 
 const App = () => {
@@ -14,11 +14,9 @@ const App = () => {
     }
   },[])
   return <div>
-    Manifest + Service Worker
+    PWA Sample1
   </div>
 }
-
-
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
