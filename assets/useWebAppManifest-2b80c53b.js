@@ -1,0 +1,1 @@
+import{r as n}from"./client-c225e30d.js";const o=t=>{n.useEffect(()=>{const e=document.createElement("link");return e.rel="manifest",e.href=t,document.head.appendChild(e),()=>{document.head.removeChild(e)}},[t])};export{o as u};
