@@ -1,1 +1,0 @@
-import{c as t,j as e,R as n,u as a}from"./useWebAppManifest-59bcf3bf.js";const s="/pwa-sample1/manifest-5ca557ee.webmanifest",c=()=>(a(s),e("div",{children:"Manifest Only"}));t.createRoot(document.getElementById("root")).render(e(n.StrictMode,{children:e(c,{})}));

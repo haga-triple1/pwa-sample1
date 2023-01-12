@@ -19,7 +19,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "https://haga-triple1.github.io/pwa-sample1/pages/manifest/index.html",
+    "start_url": "./pages/manifest/index.html",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
