@@ -1,1 +1,0 @@
-import{c as t,j as e,R as s}from"./client-c225e30d.js";import{u as a}from"./useWebAppManifest-2b80c53b.js";const n="/pwa-sample1/assets/manifest-5ca557ee.webmanifest",r=()=>(a(n),e("div",{children:"Manifest Only"}));t.createRoot(document.getElementById("root")).render(e(s.StrictMode,{children:e(r,{})}));
