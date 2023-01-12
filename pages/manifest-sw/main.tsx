@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import { useWebAppManifest } from '../../src/useWebAppManifest'
 import manifest from "../../src/assets/manifest-sw.webmanifest";
-import sw from "../../src/assets/sw.js?url"
+import sw from "./sw.js?url"
 
 const App = () => {
   useWebAppManifest(manifest)
