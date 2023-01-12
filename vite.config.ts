@@ -11,6 +11,7 @@ export default defineConfig({
 			input: {
 				sample1: resolve(__dirname, "pages",'manifest', 'index.html'),
 				sample2: resolve(__dirname, "pages",'manifest-sw', 'index.html'),
+				reset: resolve(__dirname, "pages",'reset', 'index.html'),
 			},
 		},
 		assetsInlineLimit: 0
