@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(sw,{
-        scope: "./pages/manifest-sw"
+        scope: "./pages/manifest-sw/"
       });
     }
   },[])
